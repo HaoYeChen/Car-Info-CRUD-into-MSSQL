@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0645C008-A18B-412E-9F2C-E67536AD7DD7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>ProjektcaseH1</RootNamespace>
+    <AssemblyName>ProjektcaseH1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Binfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Binfo.Designer.cs">
+      <DependentUpon>Binfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DBmodel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBmodel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBmodel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBmodel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DBmodel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBmodel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="HovedMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HovedMenu.Designer.cs">
+      <DependentUpon>HovedMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KundeInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KundeInfo.Designer.cs">
+      <DependentUpon>KundeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Logpå.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Logpå.Designer.cs">
+      <DependentUpon>Logpå.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProjektcaseDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjektcaseDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjektcaseDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjektcaseDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjektcaseDBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjektcaseDBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjektcaseDBDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjektcaseDBDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjektcaseDBDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjektcaseDBDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjektcaseDBDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjektcaseDBDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjektcaseDBDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjektcaseDBDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Binfo.resx">
+      <DependentUpon>Binfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HovedMenu.resx">
+      <DependentUpon>HovedMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KundeInfo.resx">
+      <DependentUpon>KundeInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Logpå.resx">
+      <DependentUpon>Logpå.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EntityDeploy Include="DBmodel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DBmodel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DBmodel.edmx.diagram">
+      <DependentUpon>DBmodel.edmx</DependentUpon>
+    </None>
+    <EntityDeploy Include="Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="ProjektcaseDBDataSet.xsc">
+      <DependentUpon>ProjektcaseDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProjektcaseDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjektcaseDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjektcaseDBDataSet.xss">
+      <DependentUpon>ProjektcaseDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProjektcaseDBDataSet1.xsc">
+      <DependentUpon>ProjektcaseDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ProjektcaseDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjektcaseDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjektcaseDBDataSet1.xss">
+      <DependentUpon>ProjektcaseDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ProjektcaseDBDataSet2.xsc">
+      <DependentUpon>ProjektcaseDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ProjektcaseDBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjektcaseDBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjektcaseDBDataSet2.xss">
+      <DependentUpon>ProjektcaseDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ProjektcaseDBDataSet3.xsc">
+      <DependentUpon>ProjektcaseDBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ProjektcaseDBDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjektcaseDBDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjektcaseDBDataSet3.xss">
+      <DependentUpon>ProjektcaseDBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ProjektcaseDBDataSet4.xsc">
+      <DependentUpon>ProjektcaseDBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ProjektcaseDBDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjektcaseDBDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjektcaseDBDataSet4.xss">
+      <DependentUpon>ProjektcaseDBDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ProjektcaseDBDataSet5.xsc">
+      <DependentUpon>ProjektcaseDBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ProjektcaseDBDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjektcaseDBDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjektcaseDBDataSet5.xss">
+      <DependentUpon>ProjektcaseDBDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="ProjektcaseDBDataSet6.xsc">
+      <DependentUpon>ProjektcaseDBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="ProjektcaseDBDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjektcaseDBDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjektcaseDBDataSet6.xss">
+      <DependentUpon>ProjektcaseDBDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DBmodel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>DBmodel.Context.cs</LastGenOutput>
+      <DependentUpon>DBmodel.edmx</DependentUpon>
+    </Content>
+    <Content Include="DBmodel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DBmodel.edmx</DependentUpon>
+      <LastGenOutput>DBmodel.cs</LastGenOutput>
+    </Content>
+    <Content Include="kundeinfoDB.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="kundeinfoDB_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>kundeinfoDB.mdf</DependentUpon>
+    </Content>
+    <Content Include="loginDBny.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="loginDBny_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>loginDBny.mdf</DependentUpon>
+    </Content>
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
